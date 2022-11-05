@@ -1,6 +1,6 @@
 window.alert("Hello, Instructors!"); //Making an alert using the
                                      // window.alert method
-document.write("Welcome to Assinment #1 of JavaScript Course."); //Displaing a text using
+document.write("Welcome to Assignment #1 of JavaScript Course."); //Displaing a text using
                                                                  //the document.write method
 document.write("\" Today we gonna learn the sum of ," +
  " 5 added to 5.\"" + " I\'m excited! "); //Demonstrating how to concatenate two variables
