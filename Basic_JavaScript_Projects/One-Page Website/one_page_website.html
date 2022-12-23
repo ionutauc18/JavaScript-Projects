@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>
+	       Simple Photography Website
+	 </title>
+	 <link rel="stylesheet" href="./CSS/one_page_website.css">
+	 <script src="./JS/one_page_website.js" defer></script>
+</head>
+<body>
+
+<!-- NAV -->
+     <div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
+				<a href="#home"><li>HOME</li></a>
+				<a href="#videos"><li>VIDEOS</li></a>
+				<a href="#portfolio"><li>PORTFOLIO</li></a>
+				<a href="#contact"><li>CONTACT</li></a>
+			</ul>
+		</div>
+	 </div>
+<!-- END NAV -->
+	 
+<!-- HOME -->
+        <div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Nature Photography!</span>
+				</div>
+			</div>
+		 </div>
+<!-- END HOME -->
+	 
+<!-- Videos -->
+	 <section>
+	         <div id="videos">
+			    <h3>Videos</h3>
+				   <div>
+				       <nav>
+					       <a href="./Videos/Woods.mp4"><h2>View an amazing video of the woods here:</h2></a>
+					   </nav>
+				   </div>
+			 </div>
+	 </section>
+<!-- End Videos -->
+
+<!-- Portfolio -->
+	 <section id="portfolio">
+		<div class="container">
+			<h1>Portfolio</h1>
+			<div class="flex-container">
+
+<!----- Images used to open the lightbox ----->
+
+				<div class="row">
+					<div class="column">
+					  <img src="./Pictures/Image_1.jpg" height="300" width="420" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  <img src="./Pictures/Image_2.jpg" height="300" width="420" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  <img src="./Pictures/Image_3.jpg" height="300" width="420" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+					<div class="column">
+					  <img src="./Pictures/Image_4.jpg" height="300" width="420" onclick="openModal();currentSlide(4)" class="hover-shadow">
+					</div>
+				  </div>
+
+<!----- The Modal/Lightbox ----->
+
+			   <div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="./Pictures/Image_1.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="./Pictures/Image_2.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="./Pictures/Image_3.jpg" style="width: 100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="./Pictures/Image_4.jpg" style="width: 100%">
+					</div>
+
+<!----- Next/previous controls ----->
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!----- Caption Text ----->
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+<!----- Thumbnail image controls ----->
+
+					<div class="column">
+						<img class="demo" src="./Pictures/Image_1.jpg" height="300" width="300" onclick="currentSlide(1)" alt="Squirrel">
+					</div>
+					<div class="column">
+						<img class="demo" src="./Pictures/Image_2.jpg" height="300" width="300" onclick="currentSlide(2)" alt="Spooky Forest">
+					</div>
+					<div class="column">
+						<img class="demo" src="./Pictures/Image_3.jpg" height="300" width="300" onclick="currentSlide(3)" alt="Amber Lake">
+					</div>
+					<div class="column">
+						<img class="demo" src="./Pictures/Image_4.jpg" height="300" width="300" onclick="currentSlide(4)" alt="Mountains Forest">
+					</div>
+				</div>
+			   </div>
+		
+<!-- End of Portfolio -->
+		
+<!-- Contact Form -->
+<section id="contact">
+	<div class="container">
+		<div class="heading-padding">
+			<h1 class="heading-padding">Contact Us</h1>
+			<div class="reservation">
+			<h2><span>If you love photography and are a nature lover.</span>
+				<br>Send us your photos and videos here!
+			</h2>
+			<p class="rsvp-text">
+				Please provide us with your basic contact information.
+			</p>
+			<div class="form-rsvp">
+					<form action="" method="post">
+						<input class="rsvp" type="text" value="" placeholder="First Name">
+						<input class="rsvp" type="text" value="" placeholder="Last Name">
+						<input class="rsvp" type="text" value="" placeholder="Email Address">
+						<input class="rsvp" type="text" value="" placeholder="Phone Number">
+						<div class="form-spacer">
+							<label class="terms">Terms and Conditions</label>
+						</div>
+						<div class="submit">
+							<input type="submit" value="submit">
+						</div>
+					</form>
+			</div>
+			</div>
+
+
+		</div>
+	</div>
+
+</section>		
+<!-- End of Contact Form -->
+		
+<!-- Footer -->
+        <div id="footer">
+            www.Photography.nature &nbsp;|&nbsp; &copy; 2022
+        </div>
+<!-- END footer -->
+		
+</body>
+</html>	 
