@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Ionut Aurel Catana</title>
+        <link rel="shorcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css">
+    </head>
+
+    <!-- Body -->
+    <body class="Background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!-- New section added -->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <!-- Onclick and ondblclick functions added to open and close the contact form -->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+        
+        <!-- Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!-- Background Video-->
+        <div id="Home">
+            <video autoplay muted loop id="typing_video">
+                <source src="./Videos/typing.mp4" type="video/mp4">
+                <!-- Display message if video fails to run -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Ionut Aurel Catana's <span>Portfolio</span></h1>
+            <strong>
+                <p class="center">
+                    <q>A successful website does three things:
+                        It attracts the right kinds of visitors.
+                        <br>Guides them to the main services or product you offer.
+                        <br>Collects contact details for future ongoing relations.
+                    </q>
+                    <br> –Mohamed Saad<br>
+                    <br>
+                    <br> Hi! My name is Ionut Aurel Catana and this is my portfolio.
+                    <br> Here you will find all about my experience and background.
+                    <br>
+                    <br> Thank you for visiting this page and hope you will enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Images/me.jpg" alt="Ionut-Aurel Catana">
+                        <div class="text">I am here to assist you on your project!</div>
+                    </div>
+                    <!-- Slide 2 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Images/HTML_CSS_JS.png" alt="HTML, CSS, and JS logos">
+                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS and JavaScript.</div>
+                    </div>
+                    <!-- Slide 3 of 3 -->
+                    <div class="mySlides">
+                        <img class="Slideshow_Images" src="./Images/developer.jpg" alt="Typing Code">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="Row" id="About">
+            <!-- Left Column -->
+            <div class="Column_2">
+                <img src="./Images/set_up.jpg" alt="Set_up">
+            </div>
+            <!-- Right Column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I have always been passionate about coding and learning! Being a young developer with big dreams, I want to progress and succeed in the beautiful world of coding!
+                    <br>
+                    <br> Graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript. 
+                    <br>
+                    <br>As a full-stack developer I would love to work with you on your projects.
+                    <br>For inquires <a onclick="openForm()" class="contact">contact</a> me below!  
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub Section -->
+        <div class="Row" id="GitHub">
+            <!-- Left Column-->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p>
+                   View my coding projects on my GitHub here:
+                   <br>
+                   <p class="center"><a href="https://github.com/ionutauc18" target="_blank">Ionut Aurel Catana's GitHub</a></p>
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="Column_2">
+                <a href="https://github.com/ionutauc18" target="_blank"><img src="./Images/GitHub.png" alt="GitHub logo"></a> 
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="post" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+         
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+        <script src="./JS/portfolio.js"></script>
+    </body>
+</html>
