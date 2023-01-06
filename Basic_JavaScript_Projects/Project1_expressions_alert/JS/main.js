@@ -3,8 +3,8 @@ window.alert("Hello, Instructors!"); //Making an alert using the
 document.write("Welcome to Assignment #1 of JavaScript Course."); //Displaing a text using
                                                                  //the document.write method
 
-let artist = "Little Mix"; 
-var z = ('My favorite artists is the group ' + artist + '.');
+var artist = "Little Mix"; // giving variable artist a value
+var z = ('My favorite artists is the group ' + artist + '.'); // concatenating a string value to a variable
 
 var z = z.fontcolor("red"); //Using the font.color method
                             //on z variable 
